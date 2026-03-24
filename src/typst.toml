@@ -6,6 +6,6 @@ entrypoint = "cjk-unshrink.typ"
 authors = ["@Neruthes"]
 license = "MIT"
 description = "Unshrink full-width punctuation marks."
-repository = "https://github.com/neruthes/typst-cjk-unshrink"
+repository = "https://github.com/neruthes/typstpkg-cjk-unshrink"
 keywords = ["CJK", "Punctuation", "Layout"]
 categories = ["utility"]
