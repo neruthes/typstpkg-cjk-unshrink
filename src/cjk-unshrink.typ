@@ -91,9 +91,9 @@
 
     。。。。。。。《《《哈基米》》》
 
-    他的 GPA 只有 3.25？神之心（Gnosis）并不重要。
+    他的 GPA 只有 3.25？你科（XXXXXXXXXXX）药丸。
 
-    他的 GPA 只有 3.25？神之心#box[（Gnosis）]并不重要。
+    他的 GPA 只有 3.25？你科#box[（XXXXXXXXXXX）]药丸。
 
 
 
