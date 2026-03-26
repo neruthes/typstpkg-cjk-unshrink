@@ -18,15 +18,12 @@ case "$1" in
         # [[ ! -d "$universe_dir" ]] &&
         # [[ -d "$universe_dir_pref" ]] &&
         if [[ -d ../typst-packages-universe ]]; then
-        rsync --dry-run -av ./src/ --exclude components "$universe_dir/" &&
-        echo "Seems that we can do this!" &&
-        echo '    ' rsync -av ./src/ --exclude components --mkpath "$universe_dir/"
-
-        echo ""
-        echo "And, we might want to send the demo pdf?"
-        echo cp _dist/src/cjk-unshrink.pdf "$universe_dir/demo.pdf"
+            rsync --dry-run -av ./src/ --exclude components "$universe_dir/" &&
+            echo "Seems that we can do this!" &&
+            echo '    ' rsync -av ./src/ --exclude components --mkpath "$universe_dir/"
+            echo ""
+            echo "And, we might want to send the demo pdf?"
         fi
-
         ;;
     install_local | i )
         rsync -auv --delete --mkpath --exclude components       src/     "$HOME"/.local/share/typst/packages/local/cjk-unshrink/"$VER"
@@ -38,6 +35,6 @@ case "$1" in
         ./make.sh fast
         ;;
     * )
-        die 1 "WARNING: No rule to make target '$1'"
+        _die 1 "WARNING: No rule to make target '$1'"
         ;;
 esac

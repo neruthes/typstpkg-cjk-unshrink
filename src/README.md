@@ -1,6 +1,6 @@
 Unshrink full-width punctuation marks. And optionally 汉字, ひらがな, カタカナ, and 한글.
 
-Demo: [demo.pdf](https://github.com/typst/packages/tree/main/packages/preview/cjk-unshrink/0.1.0/demo.pdf).
+Demo: [demo.pdf]().
 
 
 ## Basic Usage
