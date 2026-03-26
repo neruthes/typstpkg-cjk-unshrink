@@ -15,14 +15,10 @@ case "$1" in
     pr | submit)
         universe_dir_pref=../typst-packages-universe/packages/preview/cjk-unshrink
         universe_dir=../typst-packages-universe/packages/preview/cjk-unshrink/"$VER"
-        # [[ ! -d "$universe_dir" ]] &&
-        # [[ -d "$universe_dir_pref" ]] &&
         if [[ -d ../typst-packages-universe ]]; then
             rsync --dry-run -av ./src/ --exclude components "$universe_dir/" &&
             echo "Seems that we can do this!" &&
             echo '    ' rsync -av ./src/ --exclude components --mkpath "$universe_dir/"
-            echo ""
-            echo "And, we might want to send the demo pdf?"
         fi
         ;;
     install_local | i )
